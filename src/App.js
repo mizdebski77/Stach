@@ -1,8 +1,8 @@
-import './App.css';
+import { Navigation } from "./Navigation/navigation";
 
 function App() {
   return (
-   <>hej</>
+   <Navigation/>
   );
 }
 
