@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-min-height: 50vh;
 background: #94989E;
-
 `;
 
 export const ContactContainer = styled.section`

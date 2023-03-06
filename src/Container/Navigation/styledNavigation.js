@@ -5,7 +5,6 @@ export const Wrapper = styled.nav`
 margin: 0 ;
 width: 100%;
 height: 80px;
-background: wheat;
 display: flex;
 background: white;
 justify-content: space-between;

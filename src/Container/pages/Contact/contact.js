@@ -1,10 +1,8 @@
-import { Container } from "../../container"
-import { Adress, ContactContainer, ContactInformation, Data, Form, Input, Message, Number, PersonalData, SendButton, Span, Text, Wrapper } from "./styledContact"
+import { Adress, ContactContainer, ContactInformation, Data, Form, Input, Message,  PersonalData, SendButton, Span, Text, Wrapper } from "./styledContact"
 
 export const Contact = () => {
     return (
         <Wrapper>
-            <Container />
             <ContactContainer>
                 <Form>
                     <Text>
