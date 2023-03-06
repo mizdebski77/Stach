@@ -81,6 +81,13 @@ border-radius: 10px;
 border: 1px solid white;
 background: transparent;
 color: white;
+transition: 0.5s;
+
+&:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px  #4D5460;
+}
 `;
 
 export const Span = styled.span`
