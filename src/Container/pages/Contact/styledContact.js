@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
 min-height: 50vh;
-background: green;
+background: #B1B4B9;
+
 `;
 
 export const ContactContainer = styled.section`
@@ -13,17 +14,22 @@ grid-template-columns: 60% 40%;
 export const Text = styled.h2`
 width: 70%;
 margin-top: 100px;
+color: white;
+font-size: 21px;
+font-weight: normal;
 `
 
 export const Form = styled.form`
 min-height: 100vh;
-background: red;
+background: #252A32;
 width: 100%;
 display: flex;
 flex-direction: column;
 grid-gap: 20px;
-justify-content: flex-start;
+justify-content: center;
 align-items:center ;
+box-shadow: 0 0 40px  #252A32; 
+
 `;
 
 export const PersonalData = styled.div`
@@ -76,4 +82,8 @@ border-radius: 10px;
 border: 1px solid white;
 background: transparent;
 color: white;
+`;
+
+export const Span = styled.span`
+color: orange;
 `;

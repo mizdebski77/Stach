@@ -1,9 +1,22 @@
+import { useState } from "react";
 import { Links, LinksContainer, Logo, Wrapper } from "./styledNavigation";
 
 export const Navigation = () => {
 
+    const [navbarColor, setNavbarColor] = useState (false);
+    
+    const changeColor = () => {
+        if(window.scrollY > 20){
+            setNavbarColor(true);
+        }else {
+            setNavbarColor(false);
+        };
+    };
+
+    window.addEventListener("scroll", changeColor);
+
     return (
-        <Wrapper>
+        <Wrapper scrolled = {navbarColor} >
             <Logo>Logo</Logo>
             <LinksContainer>
                 <Links to="/home">Home</Links>

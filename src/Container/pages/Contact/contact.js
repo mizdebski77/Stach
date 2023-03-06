@@ -1,5 +1,5 @@
-import { Container } from "../container"
-import { ContactContainer, ContactInformation, Form, Input, Message, PersonalData, SendButton, Text, Wrapper } from "./styledContact"
+import { Container } from "../../container"
+import { ContactContainer, ContactInformation, Form, Input, Message, PersonalData, SendButton, Span, Text, Wrapper } from "./styledContact"
 
 export const Contact = () => {
     return (
@@ -8,7 +8,7 @@ export const Contact = () => {
             <ContactContainer>
                 <Form>
                     <Text>
-                        Masz pytanie? Chcesz dowiedzieć się czegoś więcej o działalności firmy?
+                        <Span>Masz pytanie? Chcesz dowiedzieć się czegoś więcej o działalności firmy?</Span>
                         Skorzystaj z poniższego formularza kontaktowego.
                     </Text>
                     <PersonalData>

@@ -1,10 +1,10 @@
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
-import { About } from "./Container/About/about";
-import { Collaborations } from "./Container/Collaborations/collab";
-import { Contact } from "./Container/Contact/contact";
-import { Home } from "./Container/Home/home";
-import { Realistaions } from "./Container/Realisations/realisations";
-import { Services } from "./Container/Services/services";
+import { About } from "./Container/pages/About/about";
+import { Collaborations } from "./Container/pages/Collaborations/collab";
+import { Contact } from "./Container/pages/Contact/contact";
+import { Home } from "./Container/pages/Home/home";
+import { Realistaions } from "./Container/pages/Realisations/realisations";
+import { Services } from "./Container/pages/Services/services";
 
 function App() {
   return (

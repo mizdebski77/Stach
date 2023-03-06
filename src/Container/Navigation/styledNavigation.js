@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.nav`
 margin: 0 ;
@@ -7,9 +7,17 @@ width: 100%;
 height: 80px;
 background: wheat;
 display: flex;
+background: white;
 justify-content: space-between;
 align-items: center;
 padding: 20px 100px 20px 100px;
+position: fixed;
+
+
+${({ scrolled }) => scrolled && css`
+    background: rgb(4, 2, 14);
+    border-bottom: 1px solid white;
+    `};
 `;
 
 export const Logo = styled.div`
