@@ -15,8 +15,7 @@ position: fixed;
 
 
 ${({ scrolled }) => scrolled && css`
-    background: rgb(4, 2, 14);
-    border-bottom: 1px solid white;
+    border-bottom:2px solid black;
     `};
 `;
 

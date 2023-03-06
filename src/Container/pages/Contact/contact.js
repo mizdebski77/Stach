@@ -1,5 +1,5 @@
 import { Container } from "../../container"
-import { ContactContainer, ContactInformation, Form, Input, Message, PersonalData, SendButton, Span, Text, Wrapper } from "./styledContact"
+import { Adress, ContactContainer, ContactInformation, Data, Form, Input, Message, Number, PersonalData, SendButton, Span, Text, Wrapper } from "./styledContact"
 
 export const Contact = () => {
     return (
@@ -20,7 +20,21 @@ export const Contact = () => {
                     <SendButton>Wyślij Wiadomość</SendButton>
                 </Form>
                 <ContactInformation>
+                    <Data>
+                        <Span>
+                            Mirosław Stach :
+                        </Span>
+                        <Adress>
+                            794-742-706
+                        </Adress>
 
+                        <Span>
+                            Adres :
+                        </Span>
+                        <Adress>
+                            32-049  Przeginia 87
+                        </Adress>
+                    </Data>
                 </ContactInformation>
             </ContactContainer>
 

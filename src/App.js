@@ -1,4 +1,6 @@
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
+import { Footer } from "./Container/Footer/footer";
+import { Navigation } from "./Container/Navigation/navigation";
 import { About } from "./Container/pages/About/about";
 import { Collaborations } from "./Container/pages/Collaborations/collab";
 import { Contact } from "./Container/pages/Contact/contact";
@@ -9,6 +11,7 @@ import { Services } from "./Container/pages/Services/services";
 function App() {
   return (
     <HashRouter>
+      <Navigation/>
       <Switch>
         <Route path="/home"><Home /></Route>
         <Route path="/o-nas"><About /></Route>
@@ -21,6 +24,7 @@ function App() {
         <Route path="/"><Redirect to="home" /></Route>
 
       </Switch>
+      <Footer/>
     </HashRouter>
 
   );

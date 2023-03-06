@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
 min-height: 50vh;
-background: #B1B4B9;
+background: #94989E;
 
 `;
 
@@ -40,8 +40,7 @@ width: 70%;
 
 `;
 
-export const ContactInformation = styled.div`
-`;
+
 
 export const Input = styled.input`
 padding: 20px;
@@ -86,4 +85,24 @@ color: white;
 
 export const Span = styled.span`
 color: orange;
+margin: 0 auto;
 `;
+
+export const ContactInformation = styled.div`
+display: grid;
+justify-content: center;
+align-items: center;
+`;
+
+export const Data = styled.h2`
+display: grid;
+color:black;
+justify-content: center;
+align-items: center;
+`;
+
+export const Adress = styled.address`
+padding: 20px;
+text-align: center;
+`;
+
