@@ -22,9 +22,27 @@ grid-template-columns: repeat(6, auto);
 grid-gap: 60px;
 align-items: center;
 
+
 `;
+
+const activeClassName = "active";
+
 export const Links = styled(NavLink)`
 color: black;
 margin: auto;
+text-decoration: none;
+transition: .5s;
+padding: 10px;
+
+
+&:hover {
+    transform: translateY(-7px);
+}
+
+&.${activeClassName} {
+    transition: 1s;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
 
 `;

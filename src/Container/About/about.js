@@ -1,5 +1,11 @@
+import { Container } from "../container"
+import { Wrapper } from "./styledAbout"
+
 export const About = () => {
     return (
-        <>XD</>
+        <Wrapper>
+        <Container/>
+        </Wrapper>
+
     )
 }
