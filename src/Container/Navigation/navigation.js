@@ -4,7 +4,7 @@ export const Navigation = () => {
 
     return (
         <Wrapper>
-            <Logo>Mirosław Stach</Logo>
+            <Logo>Logo</Logo>
             <LinksContainer>
                 <Links to="/home">Home</Links>
                 <Links to="/o-nas">O nas</Links>
