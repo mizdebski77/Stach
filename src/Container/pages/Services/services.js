@@ -1,40 +1,67 @@
-import { Image, ImagesWrapper, ImageWrapper, More, Span,  Wrapper } from "./styledServices"
+import { Image, ImagesWrapper, ImageWrapper, More, MoreText, Span, Title, Wrapper } from "./styledServices"
 import koparka from "./img/koparka.jpg"
+import { useState } from "react"
 
 export const Services = () => {
+
+    const [showMore, setShowMore] = useState(false);
+    console.log(showMore);
+
+    const showMoreText = () => {
+        setShowMore(!showMore);
+    }
     return (
 
         <Wrapper>
             <ImagesWrapper>
-                <ImageWrapper>
+                <ImageWrapper >
                     <Image src={koparka}></Image>
                     <Span> Usługi koparką gąsienicową</Span>
-                    <More>Czytaj więcej ↓</More>
+                    <MoreText readMore={showMore}><p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>  </MoreText>
+                    <More onClick={showMoreText}>Pokaż {showMore ? "więcej ↓" : "mniej  ↑"}  </More>
                 </ImageWrapper>
-                <ImageWrapper>
-                    <Image src={koparka}></Image>
-                    <Span> Usługi koparką kołową</Span>
-                    <More>Czytaj więcej ↓</More>
-                </ImageWrapper>                <ImageWrapper>
-                    <Image src={koparka}></Image>
-                    <Span> Usługi mini koparką</Span>
-                    <More>Czytaj więcej ↓</More>
-                </ImageWrapper>                <ImageWrapper>
-                    <Image src={koparka}></Image>
-                    <Span> Usługi traktorem</Span>
-                    <More>Czytaj więcej ↓</More>
-                </ImageWrapper>
-                <ImageWrapper>
-                    <Image src={koparka}></Image>
-                    <Span> Usługi ładowarką </Span>
-                    <More>Czytaj więcej ↓</More>
-                </ImageWrapper>
-                <ImageWrapper>
+                <ImageWrapper >
                     <Image src={koparka}></Image>
                     <Span> Usługi koparką gąsienicową</Span>
-                    <More>Czytaj więcej ↓</More>
+                    <MoreText readMore={showMore}><p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>  </MoreText>
+                    <More onClick={showMoreText}>Pokaż {showMore ? "więcej ↓" : "mniej  ↑"}  </More>
                 </ImageWrapper>
-
+                <ImageWrapper >
+                    <Image src={koparka}></Image>
+                    <Span> Usługi koparką gąsienicową</Span>
+                    <MoreText readMore={showMore}><p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>  </MoreText>
+                    <More onClick={showMoreText}>Pokaż {showMore ? "więcej ↓" : "mniej  ↑"}  </More>
+                </ImageWrapper>
+                <ImageWrapper >
+                    <Image src={koparka}></Image>
+                    <Span> Usługi koparką gąsienicową</Span>
+                    <MoreText readMore={showMore}><p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>  </MoreText>
+                    <More onClick={showMoreText}>Pokaż {showMore ? "więcej ↓" : "mniej  ↑"}  </More>
+                </ImageWrapper>
 
             </ImagesWrapper>
         </Wrapper>
