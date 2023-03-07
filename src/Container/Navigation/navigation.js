@@ -7,7 +7,7 @@ export const Navigation = () => {
     
     
     const changeColor = () => {
-        if(window.scrollY > 20){
+        if(window.scrollY > 50){
             setNavbarColor(true);
         }else {
             setNavbarColor(false);

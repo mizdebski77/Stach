@@ -70,5 +70,8 @@ ${({ readMore }) => readMore && css`
     `};
 `;
 
+export const Paragraph = styled.p`
+
+`;
 
 

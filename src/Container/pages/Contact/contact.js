@@ -6,7 +6,7 @@ export const Contact = () => {
             <ContactContainer>
                 <Form>
                     <Text>
-                        <Span>Masz pytanie? Chcesz dowiedzieć się czegoś więcej o działalności firmy?</Span>
+                        <Span>Masz pytanie? Chcesz dowiedzieć się czegoś więcej o działalności firmy? </Span>
                         Skorzystaj z poniższego formularza kontaktowego.
                     </Text>
                     <PersonalData>
