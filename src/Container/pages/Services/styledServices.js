@@ -41,6 +41,8 @@ transition: 1s;
 export const Span = styled.p`
 color: orange;
 padding: 20px;
+font-size: 35px;
+text-align: center;
 `;
 
 export const More = styled.button`

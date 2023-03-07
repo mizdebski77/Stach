@@ -4,8 +4,7 @@ import { useState } from "react"
 
 export const Services = () => {
 
-    const [showMore, setShowMore] = useState(false);
-    console.log(showMore);
+    const [showMore, setShowMore] = useState(true);
 
     const showMoreText = () => {
         setShowMore(!showMore);

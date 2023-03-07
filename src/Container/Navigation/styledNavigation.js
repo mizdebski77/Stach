@@ -11,6 +11,7 @@ justify-content: space-between;
 align-items: center;
 padding: 20px 100px 20px 100px;
 position: fixed;
+z-index: 980;
 
 
 ${({ scrolled }) => scrolled && css`
