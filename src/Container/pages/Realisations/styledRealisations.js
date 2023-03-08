@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.section`
-background: #94989E;
+background:  #252A32;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -9,7 +9,7 @@ flex-direction: column;
 `;
 
 
-export const ImagesWrapper = styled.section`
+export const Container = styled.section`
 display: grid;
 grid-gap: 20px;
 margin-top: 150px;
@@ -21,12 +21,12 @@ margin-bottom: 20px;
 `;
 
 
-export const ImageWrapper = styled.div`
+export const ImageContainer = styled.div`
 width: 100%;
 color: white;
 border: 1px solid white;
 background:#252A32 ;
-box-shadow: 0 0 30px #252A32 ;
+box-shadow: 0 0 10px rgb(148, 152, 158);
 overflow: hidden;
 
 ${({ fullScreenImage }) => fullScreenImage && css`

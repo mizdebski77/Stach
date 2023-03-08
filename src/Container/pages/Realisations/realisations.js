@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Wrapper, ImagesWrapper, ImageWrapper, AdditionalImages, Image, MoreButton } from "./styledRealisations"
+import { Wrapper, Container, ImageWrapper , ImageContainer, AdditionalImages, Image, MoreButton } from "./styledRealisations"
 import work from "./work.jpg";
 
 
@@ -22,40 +22,48 @@ export const Realistaions = () => {
 
     return (
         <Wrapper>
-            <ImagesWrapper >
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 0} onClick={() => applyFullScreen(0)}>
+            <Container >
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 0} onClick={() => applyFullScreen(0)}>
                    <Image fullScreenImage = {fullScreen} src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 1} onClick={() => applyFullScreen(1)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 1} onClick={() => applyFullScreen(1)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 2} onClick={() => applyFullScreen(2)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 2} onClick={() => applyFullScreen(2)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 3} onClick={() => applyFullScreen(3)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 3} onClick={() => applyFullScreen(3)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-            </ImagesWrapper>
+                </ImageContainer>
+            </Container>
 
             <AdditionalImages showMore={showMorePhotos}>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 4} onClick={() => applyFullScreen(1)}>
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 4} onClick={() => applyFullScreen(1)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 5} onClick={() => applyFullScreen(5)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 5} onClick={() => applyFullScreen(5)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 6} onClick={() => applyFullScreen(6)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 6} onClick={() => applyFullScreen(6)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 7} onClick={() => applyFullScreen(7)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 7} onClick={() => applyFullScreen(7)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 8} onClick={() => applyFullScreen(8)}>
+                </ImageContainer>
+
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 8} onClick={() => applyFullScreen(8)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 9} onClick={() => applyFullScreen(9)}>
+                </ImageContainer>
+                
+                <ImageContainer fullScreenImage={fullScreen && imageIndex === 9} onClick={() => applyFullScreen(9)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
-                </ImageWrapper>
+                </ImageContainer>
             </AdditionalImages>
             <MoreButton onClick={morePhotos}>  Pokaż {showMorePhotos ? "więcej ↓" : "mniej ↑"} </MoreButton>
 

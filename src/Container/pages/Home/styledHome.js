@@ -8,11 +8,16 @@ background:  #252A32;
 
 
 export const ImageContainer = styled.div`
-position: relative;
-width: 100%;
-min-height: 100vh;
-height: 100%;
-overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height:100vh;
+  height: 100%;
+  overflow: hidden;
+  transition: min-height 0.5s ease; /* Add smooth transition effect */
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    min-height: 40vh;
+  };
 `;
 
 export const Image = styled.img`
@@ -27,7 +32,6 @@ transition: transform 0.5s ease-in-out;
 export const Container = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
-justify-content: space-around;
 width: 100%;
 `;
 
@@ -39,6 +43,13 @@ background:#B55A08;
 border-radius: 20px;
 padding: 20px;
 margin: 20px;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+
+  };
 `;
 
 
@@ -54,6 +65,11 @@ margin-right: 60px;
   transition: 1s ;
   color:white ;
 }
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+  padding:0 20px 40px 20px;
+  margin-right: 0;
+
+  };
 `;
 
 export const Section = styled.section`
@@ -65,6 +81,13 @@ justify-content: center;
 padding: 100px;
 padding-bottom: 20px;
 min-height: 70vh;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding: 20px;
+
+  };
 `;
 
 
