@@ -58,7 +58,6 @@ export const Home = () => {
                 <ButtonLink to="/usługi"> Pełna oferta </ButtonLink>
             </ButtonLinkContainer>
 
-            
 
             <Title> Nasza praca </Title>
             <Section>
@@ -69,44 +68,10 @@ export const Home = () => {
                     {text}
                 </TextArea>
             </Section>
-            
+
             <ButtonLinkContainer>
                 <ButtonLink to="/galeria"> Galeria </ButtonLink>
             </ButtonLinkContainer>
-
-
-
-            {/* 
-            <AddTitle>Czym się zajmujemy </AddTitle>
-            <Container>
-                <Images src={first} />
-                <Images src={first} />
-                <Images src={first} />
-            </Container>
-            <ButtonContainer>
-                <ButtonLink to="/galeria"> Przedź do Galerii </ButtonLink>
-            </ButtonContainer>
-
-            <AddTitle>Co oferujemy</AddTitle>
-            <Container>
-                <Images src={second} />
-                <Images src={second} />
-                <Images src={second} />
-            </Container>
-            <ButtonContainer>
-                <ButtonLink to="/usługi"> Przedź do Oferty </ButtonLink>
-            </ButtonContainer>
-
-            <AddTitle>Współpracowaliśmy z takimi firmami jak: : </AddTitle>
-            <Container>
-                <Companies src={menard} />
-                <Companies src={menard} />
-                <Companies src={menard} />
-            </Container>
-            <ButtonContainer>
-                <ButtonLink to="/usługi">Sprawdź nasze wszystkie współprace </ButtonLink>
-            </ButtonContainer> */}
-
         </Wrapper>
     );
 };
