@@ -12,6 +12,7 @@ export const Services = () => {
         { id: 4, isExpanded: true },
     ]);
 
+
     const showMoreText = (id) => {
         const updatedState = showMore.map(item => {
             if (item.id === id) {
@@ -25,7 +26,7 @@ export const Services = () => {
         setShowMore(updatedState);
     };
 
- 
+
 
     return (
 
