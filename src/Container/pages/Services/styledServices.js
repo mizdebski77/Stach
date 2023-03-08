@@ -18,6 +18,12 @@ padding: 100px;
 padding-bottom: 100px;
 min-height: 70vh;
 align-items: start;
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding: 20px;
+  };
 `;
 
 export const Title = styled.h3`
@@ -42,12 +48,19 @@ padding: 20px;
 border-radius: 20px;
 display: flex;
 flex-direction: column;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+  font-size: 12px;
+};
 `;
 
 export const AdditionalTextArea = styled.h3`
 font-weight: normal;
 margin: 0;
 font-size: 18px;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+  font-size: 12px;
+};
 
 
 ${({ readMore }) => readMore && css`
