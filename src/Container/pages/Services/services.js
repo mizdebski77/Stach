@@ -67,7 +67,6 @@ export const Services = () => {
                     </p>  </MoreText>
                     <More onClick={() => showMoreText(4)}>Pokaż {showMore[3].isExpanded ? "więcej ↓" : "mniej  ↑"}  </More>
                 </ImageWrapper>
-
             </ImagesWrapper>
         </Wrapper>
 

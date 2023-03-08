@@ -21,7 +21,6 @@ export const Navigation = () => {
             <Logo>Logo</Logo>
             <LinksContainer>
                 <Links to="/home">Home</Links>
-                <Links to="/o-nas">O nas</Links>
                 <Links to="/usługi">Usługi</Links>
                 <Links to="/galeria">Galeria</Links>
                 <Links to="/współpraca">Współpraca</Links>

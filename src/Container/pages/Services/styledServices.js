@@ -5,18 +5,16 @@ background: #94989E;
 display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: column;
 `;
 
 
 export const ImagesWrapper = styled.section`
+margin: 50px;
+
 display: grid;
-grid-gap: 20px;
+grid-gap: 100px;
 margin-top: 150px;
-grid-template-columns: 1fr 1fr;
-justify-content: center;
-align-items: center;
-max-width: 80%;
+max-width: 50%;
 margin-bottom: 150px;
 `;
 
@@ -63,6 +61,7 @@ transform: scale(1.05);
 cursor: pointer;
 }
 `;
+
 
 
 export const MoreText = styled.p`
