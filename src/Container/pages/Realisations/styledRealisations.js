@@ -27,11 +27,20 @@ color: white;
 border: 1px solid white;
 background:#252A32 ;
 box-shadow: 0 0 30px #252A32 ;
-transition: 1s;
 overflow: hidden;
+
+${({ fullScreenImage }) => fullScreenImage && css`
+width: 80%;
+height: 80%;
+position: fixed;
+margin: auto;
+margin-left: -100px;
+z-index: 980;
+`};
 
 &:hover {
     box-shadow: 0 0 30px white ;
+    cursor: pointer;
 };`;
 
 
@@ -53,15 +62,24 @@ ${({ showMore }) => showMore && css`
 
 export const Image = styled.img`
 width: 100%;
+height: 100%;
 transition: 0.5s linear;
 transition-timing-function:ease-in-out;
 
 &:hover{
     zoom: normal;
     transform: scale(1.1);
-    cursor: pointer;
     opacity: 60%;
-};`;
+}
+
+${({ fullScreenImage }) =>
+        fullScreenImage &&
+        css`
+      pointer-events: none;
+    `};
+
+;
+`;
 
 export const MoreButton = styled.button`
 color: black;
