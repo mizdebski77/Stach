@@ -104,6 +104,10 @@ font-weight: normal;
 box-shadow: 0 0 10px rgb(148, 152, 158);
 padding: 20px;
 border-radius: 20px;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+  font-size: 12px;
+};
 `;
 
 export const ButtonLinkContainer = styled.div`
