@@ -3,6 +3,7 @@ import { Wrapper, ImagesWrapper, ImageWrapper, AdditionalImages, Image, MoreButt
 import work from "./work.jpg";
 
 
+
 export const Realistaions = () => {
     const [showMorePhotos, setShowMorePhotos] = useState(true);
     const [fullScreen, setFullScreen] = useState(false);
@@ -37,7 +38,7 @@ export const Realistaions = () => {
             </ImagesWrapper>
 
             <AdditionalImages showMore={showMorePhotos}>
-                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 4} onClick={() => applyFullScreen(4)}>
+                <ImageWrapper fullScreenImage={fullScreen && imageIndex === 4} onClick={() => applyFullScreen(1)}>
                    <Image fullScreenImage = {fullScreen}src={work} />
                 </ImageWrapper>
                 <ImageWrapper fullScreenImage={fullScreen && imageIndex === 5} onClick={() => applyFullScreen(5)}>

@@ -33,8 +33,10 @@ ${({ fullScreenImage }) => fullScreenImage && css`
 width: 80%;
 height: 80%;
 position: fixed;
+bottom: 100px;
+right: 220px;
+left: 220px;
 margin: auto;
-margin-left: -100px;
 z-index: 980;
 `};
 
