@@ -7,6 +7,10 @@ background: #94989E;
 export const ContactContainer = styled.section`
 display: grid;
 grid-template-columns: 60% 40%;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    grid-template-columns: 1fr;
+  };
 `;
 
 export const Text = styled.h2`
@@ -15,6 +19,12 @@ margin-top: 100px;
 color: white;
 font-size: 21px;
 font-weight: normal;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    width: 90%;
+    font-size: 15px;
+    margin: 20px;
+  };
 `
 
 export const Form = styled.form`
@@ -28,6 +38,10 @@ justify-content: center;
 align-items:center ;
 box-shadow: 0 0 40px  #252A32; 
 
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   grid-template-columns: 1fr;
+  };
+
 `;
 
 export const PersonalData = styled.div`
@@ -36,6 +50,10 @@ grid-template-columns: 1fr 1fr;
 grid-gap: 30px;
 width: 70%;
 
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   grid-template-columns: 1fr;
+   width: 90%;
+  };
 `;
 
 
@@ -49,9 +67,14 @@ border: 1px solid white;
 border-radius: 10px;
 color: white;
 
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   grid-template-columns: 1fr;
+   padding: 15px;
+  };
+
 
 &::placeholder {
-    color: white;
+    color: rgba(255, 255 ,255 0.7);
 }
 
 `;
@@ -67,9 +90,17 @@ border-radius: 10px;
 padding: 20px;
 color: white;
 
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   padding: 15px;
+   width: 90%;
+  };
+
+
+
+
 
 &::placeholder {
-    color: white;
+    color: rgba(255, 255 ,255 0.7);
 }
 `;
 
