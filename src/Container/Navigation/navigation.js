@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { fadeIn, fadeOut, Links, LinksContainer, Logo, PhoneContainer, PhoneNavbar, Wrapper } from "./styledNavigation";
+import { Links, LinksContainer, Logo, PhoneContainer, PhoneNavbar, Wrapper } from "./styledNavigation";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import styled from "styled-components";
 
 
 export const Navigation = () => {

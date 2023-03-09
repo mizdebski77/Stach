@@ -3,7 +3,7 @@ import { Footer } from "./Container/Footer/footer";
 import { Navigation } from "./Container/Navigation/navigation";
 import { Contact } from "./Container/pages/Contact/contact";
 import { Home } from "./Container/pages/Home/home";
-import { Realistaions } from "./Container/pages/Realisations/realisations";
+import { Realisations } from "./Container/pages/Realisations/realisations";
 import { Services } from "./Container/pages/Services/services";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route path="/home"><Home /></Route>
         <Route path="/usługi"><Services /></Route>
-        <Route path="/galeria"><Realistaions /></Route>
+        <Route path="/galeria"><Realisations /></Route>
         <Route path="/kontakt"><Contact /></Route>
 
 
