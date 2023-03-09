@@ -1,13 +1,14 @@
-import { Image, ImageContainer, Photo, Section, Title, Wrapper, TextArea, Links, ButtonLink, ButtonLinkContainer } from "./styledHome";
+import { Image, ImageContainer, Photo, Section, Title, Wrapper, TextArea,  ButtonLink, ButtonLinkContainer } from "./styledHome";
 import first from './img/1.jpg';
 import second from './img/2.jpg';
 import third from './img/3.jpg';
-import { useEffect, useState } from "react";
-import menard from "./img/menard.png";
+import { useEffect, useState, useMemo } from "react";
 
 export const Home = () => {
     const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    const images = [first, second, third];
+
+    const images = useMemo(() => [first, second, third], []);
+
     const [currentImage, setCurrentImage] = useState(0);
 
     useEffect(() => {

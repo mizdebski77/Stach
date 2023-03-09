@@ -1,9 +1,12 @@
-import { Wrapper } from "./styledFooter"
+import { Adress, BottomContainer, Links, Container, Copyright, Data, LinksContainer, Logo, Span, TopContainer, Wrapper } from "./styledFooter"
 
 export const Footer = () => {
     return (
         <Wrapper>
-            Wszelkie prawa zastrzeżone
+            <Container>
+                <Copyright> Copyright © 2020 Mirosław Stach - Firma Usługowa</Copyright>
+                <Logo> Logo </Logo>
+            </Container>
         </Wrapper>
     )
 }

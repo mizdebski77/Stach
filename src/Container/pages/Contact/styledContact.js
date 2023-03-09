@@ -140,5 +140,7 @@ align-items: center;
 export const Adress = styled.address`
 padding: 20px;
 text-align: center;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+font-size:20px  };
 `;
 

@@ -1,4 +1,4 @@
-import { AdditionalTextArea, Image, ImagesWrapper, ImageWrapper, More, MoreButton, MoreText, Photo, Section, Span, TextArea, Title, Wrapper } from "./styledServices"
+import { AdditionalTextArea,   MoreButton, Photo, Section,  TextArea, Title, Wrapper } from "./styledServices"
 import koparka from "./img/koparka.jpg"
 import { useState } from "react"
 

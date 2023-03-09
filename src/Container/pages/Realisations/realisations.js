@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Wrapper, Container, ImageWrapper , ImageContainer, AdditionalImages, Image, MoreButton } from "./styledRealisations"
+import { Wrapper, Container,  ImageContainer, AdditionalImages, Image, MoreButton } from "./styledRealisations"
 import work from "./work.jpg";
 
 
