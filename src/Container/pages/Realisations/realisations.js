@@ -1,10 +1,7 @@
 import { useState } from "react";
-import { Wrapper, Image, CloseButton, FullScreenWrapper, FullScreenImage, ImageContainer, ImagesContainer, AdditionalImages, MoreButton } from "./styledRealisations"
+import { Wrapper, Image, CloseButton, FullScreenWrapper, FullScreenImage, ImageContainer, ImagesContainer, AdditionalImages, MoreButton, ButtonContainer } from "./styledRealisations"
 import work from "./work.jpg";
 import { AiOutlineClose } from "react-icons/ai";
-import { ButtonLinkContainer } from "../Home/styledHome";
-
-
 
 export const Realisations = () => {
    const [showMorePhotos, setShowMorePhotos] = useState(true);
@@ -63,9 +60,9 @@ export const Realisations = () => {
                </ImageContainer>
             </AdditionalImages>
 
-            <ButtonLinkContainer>
+            <ButtonContainer>
             <MoreButton onClick={morePhotos}>  Pokaż {showMorePhotos ? "więcej ↓" : "mniej ↑"} </MoreButton>
-            </ButtonLinkContainer>
+            </ButtonContainer>
          </Wrapper>
          
          <FullScreenWrapper fullScreenPhoto={fullScreenPhoto}>

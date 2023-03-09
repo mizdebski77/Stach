@@ -13,18 +13,29 @@ padding: 50px;
 padding-bottom: 20px;
 grid-template-columns:1fr 1fr ;
 grid-gap: 50px;
-width: 80%;
+width: 75%;
 margin: 0 auto;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 90%;
+  };
 `;
 
 export const AdditionalImages = styled.div`
 display: grid;
 padding: 50px;
-padding-top: 20px;
+padding-bottom: 20px;
 grid-template-columns:1fr 1fr ;
 grid-gap: 50px;
-width: 80%;
+width: 75%;
 margin: 0 auto;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    grid-template-columns: 1fr;
+    padding: 40px 10px 10px 10px;
+    width: 90%;
+  };
 ${({ showMore }) => showMore && css`
     display: none;
 `};`;
@@ -40,7 +51,7 @@ box-shadow: 0 0 10px rgb(148, 152, 158);
 overflow: hidden;`
 
 export const Image = styled.img`
-max-width: 700px;
+max-width: 1000px;
 width: 100%;
 cursor: pointer;
 transition: 0.5s linear;
@@ -72,6 +83,11 @@ export const FullScreenImage = styled.img`
   display: block;
   width: 80%;
   max-width: 1300px;
+
+  @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   width: 90%;
+   margin-top: 150px;
+  };
 `;
 
 export const CloseButton = styled.span`
@@ -86,19 +102,35 @@ export const CloseButton = styled.span`
 `;
 
 
+export const ButtonContainer = styled.div`
+display: flex;
+justify-content: flex-end;
+width: 75%;
+margin: auto;
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   width: 90%;
+  };
+`;
+
+
+
 export const MoreButton = styled.button`
 font-size: 20px;
 color: orange;
 transition: 1s;
 background: transparent;
 border: none;
-padding: 20px 40px 80px 40px;
-margin-right: 200px;
+padding: 20px 40px  80px 40px;
+cursor: pointer;
 &:hover {
-    cursor: pointer;
     color: white;
     transform: translateY(-7px);
-};`;
+};
+
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+   padding-right:10px ;
+  };`;
 
 
 
