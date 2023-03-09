@@ -7,7 +7,7 @@ min-height: 100px;
 bottom: 0;
 color: white;
 border-top: 1px solid white;
-background: #1A1B1F;
+background: #4E5156;
 display: grid;
 align-items: center;
 
@@ -22,7 +22,7 @@ align-items: center;
 
 @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
     display: grid;
-    margin: 20px;
+    margin: 10px;
     justify-content: center;
     align-items: center;
   };
@@ -32,7 +32,10 @@ align-items: center;
 export const Copyright = styled.h2`
 font-weight: normal;
 font-size: 20px;
-margin: 10px;
+margin: 0;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    font-size: 12px;
+  };
 `;
 
 export const Logo = styled.h2`
@@ -41,5 +44,8 @@ font-size: 30px;
 margin: 10px;
 justify-content: center;
 display: flex;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    font-size: 15px;
+  };
 `;
 
