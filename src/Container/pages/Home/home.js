@@ -45,7 +45,7 @@ export const Home = () => {
             </Section>
 
 
-            <Title> Czym się zajmujemy</Title>
+            <Title> Czym się zajmujemy </Title>
             <Section>
                 <Photo src={second} />
                 <TextArea>
@@ -56,7 +56,7 @@ export const Home = () => {
             </Section>
 
             <ButtonLinkContainer>
-                <ButtonLink to="/usługi"> Pełna oferta </ButtonLink>
+                <ButtonLink to="/usługi"> Pełna oferta → </ButtonLink>
             </ButtonLinkContainer>
 
 
@@ -71,7 +71,7 @@ export const Home = () => {
             </Section>
 
             <ButtonLinkContainer>
-                <ButtonLink to="/galeria"> Galeria </ButtonLink>
+                <ButtonLink to="/galeria"> Galeria → </ButtonLink>
             </ButtonLinkContainer>
         </Wrapper>
     );

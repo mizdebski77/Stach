@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled, { css } from "styled-components";
-
+import styled, { css, keyframes } from "styled-components";
 
 export const Wrapper = styled.nav`
 margin: 0 ;
@@ -67,9 +66,35 @@ padding: 10px;
 
 export const PhoneNavbar = styled.div`
     cursor: pointer;
+    transition: 5s;
+
+
 @media (min-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
     display: none;
 }`;
+
+export const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+export const fadeOut = keyframes`
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+`;
+
 
 export const PhoneContainer = styled.div`
 background: rgba(255, 255, 255, 0.95);
@@ -79,4 +104,16 @@ padding: 20px;
 width: 100%;
 display: grid;
 z-index: 980;
+grid-gap: 20px;
+animation: ${({ phoneNavbar }) => (phoneNavbar ? fadeIn : fadeOut)} 0.5s ease-in-out forwards;
+
+@media (min-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    display: none;
+}
 `;
+
+
+
+
+
+
