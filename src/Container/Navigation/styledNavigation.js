@@ -79,5 +79,8 @@ padding: 20px;
 width: 100%;
 display: grid;
 z-index: 980;
+transition: transform 0.3s ease-in-out;
+  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+
 
 `;
