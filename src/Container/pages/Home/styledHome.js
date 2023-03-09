@@ -98,9 +98,10 @@ box-shadow: 0 0 10px rgb(148, 152, 158);
 `;
 
 
-export const TextArea = styled.h3`
+export const TextArea = styled.div`
 color: white;
 font-weight: normal;
+font-size: 20px;
 box-shadow: 0 0 10px rgb(148, 152, 158);
 padding: 20px;
 border-radius: 20px;

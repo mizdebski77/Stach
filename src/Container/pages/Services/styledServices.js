@@ -25,7 +25,9 @@ align-items: start;
   };
 `;
 
-export const Title = styled.h3`
+export const Title = styled.div`
+margin: 20px;
+font-size: 21px;
 color: orange;
 text-align: center;
 `;
@@ -37,7 +39,7 @@ box-shadow: 0 0 10px rgb(148, 152, 158);
 align-self: center;
 `;
 
-export const TextArea = styled.h3`
+export const TextArea = styled.div`
 color: white;
 font-size: 18px;
 margin: 0;
@@ -52,7 +54,8 @@ flex-direction: column;
 };
 `;
 
-export const AdditionalTextArea = styled.h3`
+export const AdditionalTextArea = styled.div`
+font-size: 18px;
 font-weight: normal;
 margin: 0;
 font-size: 18px;
