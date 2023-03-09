@@ -10,11 +10,26 @@ min-height: 100vh;
 export const ImagesContainer = styled.div`
 display: grid;
 padding: 50px;
+padding-bottom: 20px;
 grid-template-columns:1fr 1fr ;
 grid-gap: 50px;
 width: 80%;
 margin: 0 auto;
 `;
+
+export const AdditionalImages = styled.div`
+display: grid;
+padding: 50px;
+padding-top: 20px;
+grid-template-columns:1fr 1fr ;
+grid-gap: 50px;
+width: 80%;
+margin: 0 auto;
+${({ showMore }) => showMore && css`
+    display: none;
+`};`;
+
+
 
 export const ImageContainer = styled.div`
 width: 100%;
@@ -34,7 +49,7 @@ transition-timing-function:ease-in-out;
 &:hover{
 zoom: normal;
 transform: scale(1.1);
-opacity: 60%;
+opacity: 30%;
 }
 
 `;
@@ -70,30 +85,15 @@ export const CloseButton = styled.span`
   cursor: pointer;
 `;
 
-export const AdditionalImages = styled.div`
-display: grid;
-padding: 50px;
-grid-template-columns:1fr 1fr ;
-grid-gap: 50px;
-width: 80%;
-margin: 0 auto;
-${({ showMore }) => showMore && css`
-    display: none;
-`};`;
 
 export const MoreButton = styled.button`
-color: orange;
-align-self: end;
-padding: 20px;
-margin-bottom: 150px;
 font-size: 20px;
-text-align: right;
+color: orange;
+transition: 1s;
 background: transparent;
 border: none;
-padding-right: 0;
-transition: 0.5s;
-margin-right: 15%;
-
+padding: 20px 40px 80px 40px;
+margin-right: 200px;
 &:hover {
     cursor: pointer;
     color: white;
