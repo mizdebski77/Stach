@@ -30,7 +30,6 @@ export const Navigation = () => {
                     <Links to="/home">Home</Links>
                     <Links to="/usługi">Usługi</Links>
                     <Links to="/galeria">Galeria</Links>
-                    <Links to="/współpraca">Współpraca</Links>
                     <Links to="/kontakt">Kontakt</Links>
                 </LinksContainer>
 

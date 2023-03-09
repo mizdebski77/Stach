@@ -34,7 +34,7 @@ font-size: 50px;
 
 export const LinksContainer = styled.li`
 display: grid;
-grid-template-columns: repeat(6, auto);
+grid-template-columns: repeat(4, auto);
 grid-gap: 60px;
 align-items: center;
 
@@ -79,8 +79,4 @@ padding: 20px;
 width: 100%;
 display: grid;
 z-index: 980;
-transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-
-
 `;

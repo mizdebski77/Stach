@@ -1,7 +1,6 @@
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import { Footer } from "./Container/Footer/footer";
 import { Navigation } from "./Container/Navigation/navigation";
-import { Collaborations } from "./Container/pages/Collaborations/collab";
 import { Contact } from "./Container/pages/Contact/contact";
 import { Home } from "./Container/pages/Home/home";
 import { Realistaions } from "./Container/pages/Realisations/realisations";
@@ -15,7 +14,6 @@ function App() {
         <Route path="/home"><Home /></Route>
         <Route path="/usługi"><Services /></Route>
         <Route path="/galeria"><Realistaions /></Route>
-        <Route path="/współpraca"><Collaborations /></Route>
         <Route path="/kontakt"><Contact /></Route>
 
 

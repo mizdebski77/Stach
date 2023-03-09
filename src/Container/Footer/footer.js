@@ -1,4 +1,4 @@
-import { Adress, BottomContainer, Links, Container, Copyright, Data, LinksContainer, Logo, Span, TopContainer, Wrapper } from "./styledFooter"
+import { Container, Copyright, Logo,Wrapper } from "./styledFooter"
 
 export const Footer = () => {
     return (

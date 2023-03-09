@@ -18,6 +18,10 @@ justify-content: center;
 align-items: center;
 max-width: 70%;
 margin-bottom: 20px;
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+max-width: 90%;
+grid-template-columns: 1fr;
+  };
 `;
 
 
@@ -56,6 +60,11 @@ align-items: center;
 max-width: 70%;
 margin-bottom: 20px;
 
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+max-width: 90%;
+grid-template-columns: 1fr;
+  };
+
 ${({ showMore }) => showMore && css`
     display: none;
 `};`;
@@ -84,12 +93,11 @@ ${({ fullScreenImage }) =>
 `;
 
 export const MoreButton = styled.button`
-color: black;
+color: orange;
 align-self: end;
 padding: 20px;
 margin-bottom: 150px;
-font-size: 30px;
-width: 100%;
+font-size: 20px;
 text-align: right;
 background: transparent;
 border: none;
@@ -99,9 +107,15 @@ margin-right: 15%;
 
 &:hover {
     cursor: pointer;
-    color: #2E2E2E;
+    color: white;
     transform: translateY(-7px);
-};`;
+};
+@media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
+    &:hover {
+    color: orange;
+    transform: translateY(0);
+}
+  };`;
 
 
 
