@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 export const Wrapper = styled.section`
 background:  #252A32;
@@ -78,11 +78,19 @@ export const FullScreenWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
 `;
 
+export const zoomIn = keyframes`
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+  `;
+
 export const FullScreenImage = styled.img`
   margin: auto;
   display: block;
   width: 80%;
   max-width: 1300px;
+  animation: ${zoomIn} 0.5s ease-in-out forwards;
+  animation-duration: 0.6s;
+
 
   @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){
    width: 90%;
