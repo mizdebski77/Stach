@@ -89,7 +89,6 @@ export const FullScreenImage = styled.img`
   width: 80%;
   max-width: 1300px;
   animation: ${zoomIn} 0.5s ease-in-out forwards;
-  animation-duration: 0.6s;
 
 
   @media (max-width: ${({ theme }) => theme.breakPoint.mobileMax}px){

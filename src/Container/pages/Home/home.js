@@ -56,7 +56,7 @@ export const Home = () => {
             </Section>
 
             <ButtonLinkContainer>
-                <ButtonLink to="/usługi"> Pełna oferta → </ButtonLink>
+                <ButtonLink to="/usługi" onClick={() => window.scrollTo(0, 0)}> Pełna oferta → </ButtonLink>
             </ButtonLinkContainer>
 
 
@@ -71,7 +71,7 @@ export const Home = () => {
             </Section>
 
             <ButtonLinkContainer>
-                <ButtonLink to="/galeria"> Galeria → </ButtonLink>
+                <ButtonLink to="/galeria"  onClick={() => window.scrollTo(0, 0)}> Galeria → </ButtonLink>
             </ButtonLinkContainer>
         </Wrapper>
     );
