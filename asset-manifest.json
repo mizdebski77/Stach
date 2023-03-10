@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/Stach/static/js/main.7bee1f2a.js",
+    "static/media/3.jpg": "/Stach/static/media/3.3b1c51e35149eddbd631.jpg",
+    "static/media/work.jpg": "/Stach/static/media/work.ff734ce8e010462fb569.jpg",
+    "static/media/2.jpg": "/Stach/static/media/2.608671fff73e292914ea.jpg",
+    "static/media/koparka.jpg": "/Stach/static/media/koparka.323321f2d160afd37df3.jpg",
+    "static/media/1.jpg": "/Stach/static/media/1.68e425fa2ab542acf93f.jpg",
+    "index.html": "/Stach/index.html",
+    "main.7bee1f2a.js.map": "/Stach/static/js/main.7bee1f2a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7bee1f2a.js"
+  ]
+}
